@@ -1,7 +1,7 @@
 # README Restaurant_Dev App
 
 ## First steps
-- https://github.com/Croip3/RestaurantApp_Dev.git
+- https://github.com/PitFroehlich/Firebase_Authentication.git
 - git clone
 - cd in RestaurantApp_Dev
 - npm install
