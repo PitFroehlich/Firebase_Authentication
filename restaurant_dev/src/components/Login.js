@@ -2,11 +2,9 @@ import React from 'react'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button'
 import {
-    createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     onAuthStateChanged,
     signOut,
-    updatePassword,
 }
     from 'firebase/auth';
 import { auth } from './firebase_config';
@@ -20,6 +18,8 @@ const Login = () => {
     onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser);
     })
+
+
 
     const login = async () => {
         try {
@@ -35,11 +35,13 @@ const Login = () => {
 
     }
 
+
     const logOut = async () => {
 
         await signOut(auth);
 
     };
+
 
     return (
         <div className="App">
