@@ -25,9 +25,7 @@ const New_password = () => {
         setUser(currentUser);
     })
 
-    const refresh = async () => {
-        window.location.reload();
-    }
+
 
 
     const neuesPasswort = async () => {
@@ -60,7 +58,7 @@ const New_password = () => {
                 onChange={(event) => {
                     setLoginPassword(event.target.value);
                 }} />
-            <Button variant="primary" onClick={neuesPasswort, refresh}>Neues Passwort</Button>
+            <Button variant="primary" onClick={neuesPasswort}>Neues Passwort</Button>
 
 
             <br></br>
